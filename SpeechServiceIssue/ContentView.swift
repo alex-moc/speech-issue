@@ -8,9 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    private let speech = AzureService(subscriptionKey: "", region: "")
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Button("Synthesize Hello") {
+            speech.synthesize("Hello") { }
+        }
+        .padding()
     }
 }
 

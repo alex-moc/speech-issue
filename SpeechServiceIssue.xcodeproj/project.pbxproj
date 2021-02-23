@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,8 @@
 		1F7CB07425E4FF31002BD86D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7CB07325E4FF31002BD86D /* ContentView.swift */; };
 		1F7CB07625E4FF33002BD86D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F7CB07525E4FF33002BD86D /* Assets.xcassets */; };
 		1F7CB07925E4FF33002BD86D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F7CB07825E4FF33002BD86D /* Preview Assets.xcassets */; };
+		1F7CB08825E50275002BD86D /* AzureServiceSimple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7CB08725E50275002BD86D /* AzureServiceSimple.swift */; };
+		AD4E19A011C402617D8D0B65 /* Pods_SpeechServiceIssue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96986412D9FD3F8307AC2B4 /* Pods_SpeechServiceIssue.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,11 @@
 		1F7CB07525E4FF33002BD86D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F7CB07825E4FF33002BD86D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1F7CB07A25E4FF33002BD86D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F7CB08725E50275002BD86D /* AzureServiceSimple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AzureServiceSimple.swift; sourceTree = "<group>"; };
+		1F7CB08B25E508B5002BD86D /* MicrosoftCognitiveServicesSpeech-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MicrosoftCognitiveServicesSpeech-Bridging-Header.h"; sourceTree = "<group>"; };
+		6E8FB1232174083E952CD0B6 /* Pods-SpeechServiceIssue.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeechServiceIssue.debug.xcconfig"; path = "Target Support Files/Pods-SpeechServiceIssue/Pods-SpeechServiceIssue.debug.xcconfig"; sourceTree = "<group>"; };
+		C96986412D9FD3F8307AC2B4 /* Pods_SpeechServiceIssue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeechServiceIssue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1BBE3FAB6552764DCE38E0B /* Pods-SpeechServiceIssue.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeechServiceIssue.release.xcconfig"; path = "Target Support Files/Pods-SpeechServiceIssue/Pods-SpeechServiceIssue.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD4E19A011C402617D8D0B65 /* Pods_SpeechServiceIssue.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +46,8 @@
 			children = (
 				1F7CB07025E4FF31002BD86D /* SpeechServiceIssue */,
 				1F7CB06F25E4FF31002BD86D /* Products */,
+				963137EDFFF147DDCC64C1A4 /* Pods */,
+				54B86567023A97C2DE08A9F1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +64,8 @@
 			children = (
 				1F7CB07125E4FF31002BD86D /* SpeechServiceIssueApp.swift */,
 				1F7CB07325E4FF31002BD86D /* ContentView.swift */,
+				1F7CB08725E50275002BD86D /* AzureServiceSimple.swift */,
+				1F7CB08B25E508B5002BD86D /* MicrosoftCognitiveServicesSpeech-Bridging-Header.h */,
 				1F7CB07525E4FF33002BD86D /* Assets.xcassets */,
 				1F7CB07A25E4FF33002BD86D /* Info.plist */,
 				1F7CB07725E4FF33002BD86D /* Preview Content */,
@@ -69,6 +81,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		54B86567023A97C2DE08A9F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C96986412D9FD3F8307AC2B4 /* Pods_SpeechServiceIssue.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		963137EDFFF147DDCC64C1A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6E8FB1232174083E952CD0B6 /* Pods-SpeechServiceIssue.debug.xcconfig */,
+				D1BBE3FAB6552764DCE38E0B /* Pods-SpeechServiceIssue.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -76,9 +105,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F7CB07D25E4FF33002BD86D /* Build configuration list for PBXNativeTarget "SpeechServiceIssue" */;
 			buildPhases = (
+				7C7F516857BFEE5267DAED4F /* [CP] Check Pods Manifest.lock */,
 				1F7CB06A25E4FF31002BD86D /* Sources */,
 				1F7CB06B25E4FF31002BD86D /* Frameworks */,
 				1F7CB06C25E4FF31002BD86D /* Resources */,
+				8200568C9A8AF1F21A9CC7A8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,11 +164,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7C7F516857BFEE5267DAED4F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpeechServiceIssue-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8200568C9A8AF1F21A9CC7A8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpeechServiceIssue/Pods-SpeechServiceIssue-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpeechServiceIssue/Pods-SpeechServiceIssue-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpeechServiceIssue/Pods-SpeechServiceIssue-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1F7CB06A25E4FF31002BD86D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F7CB08825E50275002BD86D /* AzureServiceSimple.swift in Sources */,
 				1F7CB07425E4FF31002BD86D /* ContentView.swift in Sources */,
 				1F7CB07225E4FF31002BD86D /* SpeechServiceIssueApp.swift in Sources */,
 			);
@@ -264,6 +338,7 @@
 		};
 		1F7CB07E25E4FF33002BD86D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E8FB1232174083E952CD0B6 /* Pods-SpeechServiceIssue.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -279,6 +354,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexandr.SpeechServiceIssue;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SpeechServiceIssue/MicrosoftCognitiveServicesSpeech-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +362,7 @@
 		};
 		1F7CB07F25E4FF33002BD86D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1BBE3FAB6552764DCE38E0B /* Pods-SpeechServiceIssue.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +378,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexandr.SpeechServiceIssue;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SpeechServiceIssue/MicrosoftCognitiveServicesSpeech-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
